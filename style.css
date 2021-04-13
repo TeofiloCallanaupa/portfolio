@@ -51,6 +51,7 @@ body {
     top: 80%;
     left: 15%;
     position: absolute;
+    filter: invert(100%);
 }
 /* PROJECTS */
 .container {
