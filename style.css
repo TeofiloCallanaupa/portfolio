@@ -1,5 +1,7 @@
 *{
     margin: 0px;
+    box-sizing: border-box;
+    padding: 0;
 }
 .profileImg {
     width: 200px;
@@ -12,17 +14,19 @@ body {
 .home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(10deg, #097be6,  #1736d4, #0d0dd4, #0b1961,  #000000, #000, #000 );
-    background-size: 200% 200%;
+    /* background: linear-gradient(10deg, #097be6,  #1736d4, #0d0dd4, #0b1961,  #000000, #000, #000 ); */
+    background: radial-gradient(ellipse at left,#0b1961, #000,  #000000);
+    overflow: hidden;
+    background-size: 400% 400%;
     position: relative;
-    animation: change 15s ease-in-out;
+    animation: fading 15s ease-in-out ;
 }
-@keyframes change {
+@keyframes fading {
     0%{
-        background-position: 100% 100%;
+        background-position: 50% 50%;
     }
     50%{
-        background-position: 50% 50%;
+        background-position: 25% 25%;
     }
     100%{
         background-position: 0% 0%;
@@ -52,6 +56,104 @@ body {
     left: 15%;
     position: absolute;
     filter: invert(100%);
+}
+/* SHOOTING STARS */
+.home .stars .star {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateZ(45deg);
+}
+.home .stars .star span {
+    width: 170px;
+    height: 2px;
+    display: block;
+    background-image: linear-gradient(to right, #fff, transparent);
+    margin: 50px;
+    margin-bottom: 150px;
+    position: relative;
+    animation: shooting 2s linear infinite;
+    opacity: 0;
+    filter: drop-shadow(0 0 6px rgb(122, 168, 255));
+}
+.home .stars .star span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 6px #fff;
+    border-radius: 50px;
+}
+.home .stars .star:nth-child(2) {
+    right: 100px;
+}
+.home .stars .star:nth-child(2) span {
+    animation: shooting 10s linear infinite;
+    animation-delay: 1s;
+}
+.home .stars .star:nth-child(3) {
+    right: 450px;
+}
+.home .stars .star:nth-child(3) span {
+    animation-delay: 2s;
+}
+.home .stars .star:nth-child(4) {
+    right: -150px;
+}
+.home .stars .star:nth-child(4) span {
+    animation: shooting 4s linear infinite;
+    animation-delay: 3s;
+}
+.home .stars .star:nth-child(5) {
+    right: -350px;
+}
+.home .stars .star:nth-child(5) span {
+    animation-delay: 2s;
+}
+.home .stars .star:nth-child(6) {
+    right: 550px;
+}
+.home .stars .star:nth-child(6) span {
+    animation-delay: 4s;
+}
+.home .stars .star:nth-child(7) {
+    right: 50px;
+}
+.home .stars .star:nth-child(7) span {
+    animation: shooting 1s linear infinite;
+    animation-delay: 4s;
+}
+.home .stars .star:nth-child(8) {
+    right: 750px;
+}
+.home .stars .star:nth-child(8) span {
+    animation-delay: 5s;
+}
+.home .stars .star:nth-child(9) {
+    right: -150px;
+}
+.home .stars .star:nth-child(9) span {
+    animation-delay: 5s;
+}
+.home .stars .star:nth-child(10) {
+    right: 250px;
+}
+.home .stars .star:nth-child(10) span {
+    animation: shooting 3s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes shooting {
+    0% {
+        transform: translateY(-200px) rotate(-90deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(600px) rotate(-90deg);
+        opacity: 0;
+    }
 }
 /* PROJECTS */
 .container {
