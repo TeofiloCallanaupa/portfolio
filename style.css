@@ -57,6 +57,18 @@ body {
     position: absolute;
     filter: invert(100%);
 }
+@media only screen and (max-width: 600px) {
+    .home .intro{
+        top: 30%;
+        left: 50%;
+        margin: 20px;
+        font-size: 0.5em;
+    }
+    .home .sittingImg {
+        width: 100px;
+    }
+
+}
 /* SHOOTING STARS */
 .home .stars .star {
     position: absolute;
@@ -88,20 +100,20 @@ body {
     border-radius: 50px;
 }
 .home .stars .star:nth-child(2) {
-    right: 100px;
+    right: 80rem;
 }
 .home .stars .star:nth-child(2) span {
-    animation: shooting 10s linear infinite;
+    animation: shooting 20s linear infinite;
     animation-delay: 1s;
 }
 .home .stars .star:nth-child(3) {
-    right: 450px;
+    right: 70rem;
 }
 .home .stars .star:nth-child(3) span {
     animation-delay: 2s;
 }
 .home .stars .star:nth-child(4) {
-    right: -150px;
+    right: 60rem;
 }
 .home .stars .star:nth-child(4) span {
     animation: shooting 4s linear infinite;
@@ -120,7 +132,7 @@ body {
     animation-delay: 4s;
 }
 .home .stars .star:nth-child(7) {
-    right: 50px;
+    right: 50rem;
 }
 .home .stars .star:nth-child(7) span {
     animation: shooting 1s linear infinite;
@@ -136,6 +148,7 @@ body {
     right: -150px;
 }
 .home .stars .star:nth-child(9) span {
+    animation: shooting 3s linear infinite;
     animation-delay: 5s;
 }
 .home .stars .star:nth-child(10) {
@@ -151,10 +164,11 @@ body {
         opacity: 1;
     }
     100% {
-        transform: translateY(600px) rotate(-90deg);
+        transform: translateY(30rem) rotate(-90deg);
         opacity: 0;
     }
 }
+
 /* PROJECTS */
 .container {
     display: flex;
