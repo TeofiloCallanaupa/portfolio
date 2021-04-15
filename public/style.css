@@ -216,6 +216,9 @@ body {
     padding: 20px;
     text-align: center;
 }
+.container .card .box .content h2 {
+    font-size: 1.5em;
+}
 .container .card .box .content a {
     position: relative;
     display: inline-block;
