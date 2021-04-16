@@ -31,6 +31,7 @@ body {
     /* display: none; */
     z-index: 2;
 }
+/* background animation */
 @keyframes fading {
     0%{
         background-position: 50% 50%;
@@ -56,11 +57,13 @@ body {
     font-family: Fantasy;
     font-style: Oblique;
     font-weight: 600;
+    animation: fadeIn 5s;
 }
 .home .intro h3 {
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
+    animation: fadeIn 6s;
 }
 .home .sittingImg {
     width: 150px;
@@ -68,7 +71,30 @@ body {
     left: 15%;
     position: absolute;
     filter: invert(100%);
+    animation: fadeIn 3s;
 }
+#enter {
+    font-size: 1.5em;
+    background: none;
+    color: rgb(111, 236, 238);
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    cursor: pointer;
+    animation: fadeIn 10s;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* phone style for home css */
 @media only screen and (max-width: 600px) {
     .home .intro{
         top: 30%;
