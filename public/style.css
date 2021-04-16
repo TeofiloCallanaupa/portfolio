@@ -6,8 +6,13 @@
 }
 .profileImg {
     width: 200px;
+    margin: 1rem;
 }
-
+.title {
+    font-size: 2em;
+    margin: 1rem;
+    font-weight: 600;
+}
 body {
     background-color: #f8f3ea;
 }
@@ -36,7 +41,6 @@ body {
 .home .intro{
     color: white;
     position: fixed;
-    /* border: 10px; */
     line-height: 1.5;
     top: 33%;
     left: 50%;
@@ -172,6 +176,7 @@ body {
         opacity: 0;
     }
 }
+/********** ABOUT ME **********/
 
 /********** PROJECTS **********/
 .container {
@@ -218,6 +223,8 @@ body {
 }
 .container .card .box .content h2 {
     font-size: 1.5em;
+    font-weight: 600;
+    padding: .5em;
 }
 .container .card .box .content a {
     position: relative;
