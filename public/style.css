@@ -10,11 +10,12 @@
 }
 .title {
     font-size: 2em;
-    margin: 1rem;
+    /* margin: 1rem; */
     font-weight: 600;
 }
 body {
     background-color: #f8f3ea;
+    overflow: hidden;
 }
 /********** HOMEPAGE **********/
 .home {
@@ -26,6 +27,9 @@ body {
     background-size: 400% 400%;
     position: relative;
     animation: fading 15s ease-in-out ;
+    position: fixed;
+    /* display: none; */
+    z-index: 2;
 }
 @keyframes fading {
     0%{

@@ -9,13 +9,15 @@
 
   <body>
     <!-- HOMEPAGE -->
-    <div class="home">
+    <div class="home" id="overlay">
       <div class="intro">
         <h1>
           “Shoot for the moon. Even if you miss, you'll land among the stars.”
         </h1>
         <h3>-Norman Vincent Peale</h3>
+        <button onclick="on()">ENTER</button>
       </div>
+      
       <img class="sittingImg" src="sitting.png" />
       <!-- SHOOTING STARS -->
       <div class="stars">
@@ -51,6 +53,12 @@
         </div>
       </div>
     </div>
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "none";
+        document.body.style.overflow = "scroll";
+      }
+    </script>
     <!-- ABOUT ME -->
     <div class="aboutMe">
       <h1 class="title">About Me</h1>
