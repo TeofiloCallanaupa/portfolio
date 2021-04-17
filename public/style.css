@@ -10,8 +10,9 @@
 }
 .title {
     font-size: 2em;
-    /* margin: 1rem; */
     font-weight: 600;
+    margin: 0 auto;
+    width: 150px;
 }
 body {
     background-color: #f8f3ea;
