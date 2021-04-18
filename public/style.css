@@ -208,10 +208,12 @@ body {
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    flex: 30%;
 }
 .profileImg {
-    width: 30%;
+    width: 100%;
     margin: 1rem;
+    height: auto;
 }
 .aboutMe .container {
     flex-direction: column;
@@ -231,9 +233,13 @@ body {
     .aboutMe {
         flex-direction: column;
     }
-    .profileImg {
-        align-self: center;
+    .imgContainer {
+        text-align: center;
     }
+    .profileImg {
+        width: 80%;
+    }
+    
     .name {
         position: relative;
         top: 0;
