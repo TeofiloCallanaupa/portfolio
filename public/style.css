@@ -321,6 +321,20 @@ body {
 .container .card:nth-child(5) .box .content a{
     background: #a47e17;
 }
+/********** FOOTER **********/
+.footer {
+    display: flex;
+    /* height: 50px; */
+    /* align-items: center; */
+    align-items: center; 
+    justify-content: center;
+    flex-direction: row;
+}
+.footer img {
+    height: 50px;
+    margin: .5rem;
+    margin-bottom: 1.5rem;
+}
 /* 
 Theme Name: Portfolio Website
 Description: This is Teofilo Callanaupa's portfolio website
