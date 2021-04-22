@@ -91,7 +91,7 @@ body {
     }
 }
 /* phone style for home css */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .home .intro{
         top: 30%;
         left: 50%;
@@ -229,7 +229,7 @@ body {
     padding: 3rem;
     text-align: justify;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .aboutMe {
         flex-direction: column;
     }
