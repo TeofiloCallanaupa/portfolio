@@ -26,6 +26,7 @@ body {
     position: fixed;
     /* display: none; */
     z-index: 2;
+    color: white;
 }
 /* background animation */
 @keyframes fading {
@@ -39,8 +40,13 @@ body {
         background-position: 0% 0%;
     }
 }
+.home h2{
+    font-family: Florence, cursive;
+    position: absolute;
+    margin: 15px;
+    animation: fadeIn 2s;
+}
 .home .intro{
-    color: white;
     position: fixed;
     line-height: 1.5;
     top: 33%;
