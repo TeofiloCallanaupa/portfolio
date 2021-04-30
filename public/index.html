@@ -24,7 +24,7 @@
         </h1>
         <h3>-Norman Vincent Peale</h3>
       </div>
-      <button id="enter" onclick="on()">ENTER</button>
+      <button class="tabbing" id="enter" onclick="on()">ENTER</button>
 
       <img class="sittingImg" alt="sitting person" src="pics/sitting.png" />
       <!-- SHOOTING STARS -->
@@ -94,7 +94,7 @@
     <h1 class="title">Projects</h1>
     <div class="container">
       <div class="card">
-        <div class="box">
+        <div class="box tabbing">
           <div class="content">
             <h2>ClassPet</h2>
             <p>
@@ -104,82 +104,98 @@
               Accessibility” hackathon.
             </p>
             <a
+              class="tabbing"
               href="https://devpost.com/software/class-pet"
               target="_blank"
               rel="noopener noreferrer"
-              >Microsoft Devpost Article</a
-            >
+              >Microsoft Devpost Article
+              <span class='screenreader-text'>(ClassPet link opens in a new tab)</span>
+              </a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="box">
-          <div class="content">
-            <h2>Plutus</h2>
-            <p>
-              Plutus is a progressive web app that allows users to create a
-              budget and visualize their spending by connecting a bank account.
-            </p>
-            <a
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>Plutus</h2>
+              <p>
+                Plutus is a progressive web app that allows users to create a
+                budget and visualize their spending by connecting a bank account.
+              </p>
+              <a
+              class="tabbing"
               href="https://phantombudget.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
-              >Deployed Site</a
-            >
+              >
+                Deployed Site
+                <span class='screenreader-text'>(Plutus link opens in a new tab)</span>
+                </a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>UFO-Tofu</h2>
+                <p>UFO-Tofu is an e-commerce web app that allows users to adopt fictitious pets and allows admins to manage inventory.</p>
+                <a
+                class="tabbing"
+                href="https://ufo-tofu.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Deployed Site
+                <span class='screenreader-text'>(UFO-Tofy link opens in a new tab)</span>
+                </a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="box">
-          <div class="content">
-            <h2>UFO-Tofu</h2>
-            <p>UFO-Tofu is an e-commerce web app that allows users to adopt</p>
-            <a
-              href="https://ufo-tofu.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Deployed Site</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="box">
-          <div class="content">
-            <h2>Mahjong</h2>
-            <p>
-              Developed an MVP 2 player tabletop game over the course of a 4 day
-              hackathon.
-            </p>
-            <a
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>Mahjong</h2>
+              <p>
+                Developed an MVP 2 player tabletop game over the course of a 4 day
+                hackathon.
+              </p>
+              <a
+              class="tabbing"
               href="https://github.com/TeofiloCallanaupa/TestMahjong"
               target="_blank"
               rel="noopener noreferrer"
-              >Source Code</a
-            >
+              >Source Code
+              <span class='screenreader-text'>(Mahjon link opens in a new tab)</span>
+              </a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="box">
-          <div class="content">
-            <h2>Portfolio Site</h2>
-            <p>This is a link to the github repo of my Portfolio Site</p>
-            <a
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>Portfolio Site</h2>
+              <p>This is a link to the github repo of my Portfolio Site</p>
+              <a
+              class="tabbing"
               href="https://github.com/TeofiloCallanaupa/portfolio"
               target="_blank"
               rel="noopener noreferrer"
-              >Source Code</a
-            >
+              >Source Code
+              <span class='screenreader-text'>(Portfolio link opens in a new tab)</span>
+              </a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer>
-      <div class="footer">
-        <div class="footerItem">
-          <a href="mailto:teofilocallanaupa@gmail.com">
-            <img src="pics/mail.png" alt="email" />
+      <footer>
+        <div class="footer">
+          <div class="footerItem">
+            <a href="mailto:teofilocallanaupa@gmail.com">
+              <img class="tabbing" src="pics/mail.png" alt="email" />
           </a>
         </div>
         <div class="footerItem">
@@ -188,7 +204,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="pics/github.png" alt="github account" />
+            <img class="tabbing" src="pics/github.png" alt="github account" />
           </a>
         </div>
         <div class="footerItem">
@@ -197,7 +213,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="pics/linkedin.jpeg" alt="linkedin account" />
+            <img class="tabbing" src="pics/linkedin.jpeg" alt="linkedin account" />
           </a>
         </div>
       </div>
