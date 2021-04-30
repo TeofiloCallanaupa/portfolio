@@ -375,6 +375,9 @@ a.middle:hover:before {
     position: relative;
     font-weight: 400;
 }
+.container .card .box .content a:hover{
+    color: rgb(130, 219, 225);
+}
 .container .card:nth-child(1) .box .content a{
     background: #2196f3;
 }
