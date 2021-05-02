@@ -358,6 +358,8 @@ a.middle:hover:before {
     flex-wrap: wrap;
     max-width: max-content;
     margin: auto;
+    padding: 2rem;
+    padding-top: 0;
 }
 .tech .main {
     display: flex;
@@ -377,6 +379,8 @@ a.middle:hover:before {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: max-content;
+    justify-content: center;
 }
 .logos .logo-detail {
     flex-direction: column;
