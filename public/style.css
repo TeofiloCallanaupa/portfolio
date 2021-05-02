@@ -353,9 +353,11 @@ a.middle:hover:before {
 /********** TECHNOLOGIES **********/
 .tech {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: max-content;
+    flex-wrap: wrap;
     max-width: max-content;
     margin: auto;
 }
@@ -367,13 +369,13 @@ a.middle:hover:before {
     display: flex;
     flex-direction: column;
 }
-.tech .main h2 {
+.tech h2 {
     font-family: cursive;
     font-size: 1.5em;
     padding: 1rem;
     font-weight: 600;
 }
-.tech .main .logos {
+.tech .logos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
