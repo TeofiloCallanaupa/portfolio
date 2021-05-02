@@ -336,9 +336,12 @@ a.middle:hover:before {
     }
     .imgContainer {
         text-align: center;
+        /* margin: 1rem; */
     }
     .profileImg {
-        width: 80%;
+        width: 75%;
+        margin: 0;
+        margin-top: 1rem;
     }
     .name {
         position: relative;
@@ -369,11 +372,16 @@ a.middle:hover:before {
     display: flex;
     flex-direction: column;
 }
+.tech-boxes {
+    align-items: center;
+    padding: 0 2rem;
+}
 .tech h2 {
     font-family: cursive;
     font-size: 1.5em;
     padding: 1rem;
     font-weight: 600;
+    text-align: center;
 }
 .tech .logos {
     display: flex;
@@ -396,6 +404,9 @@ a.middle:hover:before {
 @media only screen and (max-width: 800px) {
     .tech .main {
         flex-direction: column;
+    }
+    .tech-boxes {
+        align-items: center;
     }
 }
 
