@@ -328,7 +328,7 @@ a.middle:hover:before {
 }
 #bio {
     font-size: 1.5em;
-    padding: 1rem 3rem 5rem 5rem;
+    padding: 1rem 3rem 3rem 5rem;
     text-align: justify;
 }
 @media only screen and (max-width: 800px) {
@@ -349,6 +349,43 @@ a.middle:hover:before {
         padding-left: 3rem;
     }
 }
+/********** TECHNOLOGIES **********/
+.tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    margin: auto;
+}
+.tech .main {
+    display: flex;
+    flex-direction: column;
+}
+.tech .main h2 {
+    font-family: cursive;
+    font-size: 1.5em;
+    padding: 1rem;
+
+}
+.tech .main .languages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.languages .logos {
+    flex-direction: column;
+    text-align: center;
+    padding: .5rem;
+}
+.languages .logos .logo {
+    height: 5rem;
+}
+.languages .logos .label {
+    text-justify: center;
+    padding: .5rem;
+}
+
 /********** PROJECTS **********/
 .container {
     display: flex;
