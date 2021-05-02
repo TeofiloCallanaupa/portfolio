@@ -61,6 +61,7 @@ a.middle:hover:before {
     animation: fading 15s ease-in-out ;
     position: fixed;
     /* display: none; */
+    /* UNDO THIS DISPLAY NONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     z-index: 2;
     color: white;
 }
@@ -360,28 +361,32 @@ a.middle:hover:before {
 }
 .tech .main {
     display: flex;
+    flex-direction: row;
+}
+.tech .main .tech-boxes{
+    display: flex;
     flex-direction: column;
 }
 .tech .main h2 {
     font-family: cursive;
     font-size: 1.5em;
     padding: 1rem;
-
+    font-weight: 600;
 }
-.tech .main .languages {
+.tech .main .logos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.languages .logos {
+.logos .logo-detail {
     flex-direction: column;
     text-align: center;
     padding: .5rem;
 }
-.languages .logos .logo {
+.logos .logo-detail .logo {
     height: 5rem;
 }
-.languages .logos .label {
+.logos .logo-detail .label {
     text-justify: center;
     padding: .5rem;
 }
