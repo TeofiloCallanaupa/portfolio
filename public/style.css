@@ -61,7 +61,6 @@ a.middle:hover:before {
     animation: fading 15s ease-in-out ;
     position: fixed;
     /* display: none; */
-    /* UNDO THIS DISPLAY NONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     z-index: 2;
     color: white;
 }
@@ -121,11 +120,12 @@ a.middle:hover:before {
     animation: fadeIn 10s;
     border-top: 1px solid #568766;
     background: #57a2d4;
-    background: -webkit-gradient(linear, left top, left bottom, from(#135987), to(#57a2d4));
-    background: -webkit-linear-gradient(top, #135987, #57a2d4);
+    /* validator warning */
+    /* background: -webkit-linear-gradient(top, #135987, #57a2d4);
     background: -moz-linear-gradient(top, #135987, #57a2d4);
     background: -ms-linear-gradient(top, #135987, #57a2d4);
-    background: -o-linear-gradient(top, #135987, #57a2d4);
+    background: -o-linear-gradient(top, #135987, #57a2d4); */
+    background-image: linear-gradient(to bottom, #135987, #57a2d4);
     padding: 4px 8px;
     border-radius: 40px;
     text-shadow: rgba(0,0,0,.4) 0 1px 0;
@@ -134,12 +134,10 @@ a.middle:hover:before {
     vertical-align: middle;
     }
  #enter:hover {
-    border-top-color: #28597a;
     background: #28597a;
     color: #ffffff;
     }
  #enter:active {
-    border-top-color: #459444;
     background: #459444;
     }
 @keyframes fadeIn {
@@ -389,8 +387,12 @@ a.middle:hover:before {
     height: 5rem;
 }
 .logos .logo-detail .label {
-    text-justify: center;
     padding: .5rem;
+}
+@media only screen and (max-width: 800px) {
+    .tech .main {
+        flex-direction: column;
+    }
 }
 
 /********** PROJECTS **********/
