@@ -389,17 +389,29 @@ a.middle:hover:before {
     flex-wrap: wrap;
     max-width: max-content;
     justify-content: center;
+    padding: .5rem;
 }
-.logos .logo-detail {
+.logos .logo-details {
+    display: flex;
     flex-direction: column;
     text-align: center;
     padding: .5rem;
+    /* height: 5rem; */
+    width: auto;
 }
-.logos .logo-detail .logo {
-    height: 5rem;
-}
-.logos .logo-detail .label {
+.logos .logo-details .logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     padding: .5rem;
+    height: 5rem;
+    width: auto;
+    
+}
+.logos .logo-details img {
+    display: flex;
+    width: auto;
+    height: 100%;
 }
 @media only screen and (max-width: 800px) {
     .tech .main {
