@@ -289,7 +289,7 @@ a.middle:hover:before {
     flex-direction: column;
 }
 .name {
-    font-size: 2em;
+    font-size: 3em;
     /* position: absolute; */
     /* top: 3em; */
     text-align: center;
@@ -375,7 +375,6 @@ a.middle:hover:before {
 .workExp .main .exps {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .workExp h3 {
     padding: 1rem;
@@ -383,6 +382,7 @@ a.middle:hover:before {
 }
 .workExp h4 {
     font-size: 1.25em;
+    align-self: center;
 }
 .workExp .main .exps .info {
     font-size: 1.5em;
